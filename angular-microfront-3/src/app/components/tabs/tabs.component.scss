@@ -1,0 +1,42 @@
+.tabs {
+    display         : flex;
+    justify-content : center;
+    background-color: transparent;
+    border-top      : 1px solid rgba(38, 38, 38, 1.0);
+    gap             : 2.5rem;
+    top             : 194px;
+    z-index         : 2;
+    margin          : auto;
+    max-width       : 935px;
+    border-top      : 1px solid rgb(38, 38, 38);
+
+    a {
+        cursor         : pointer;
+        padding        : 15px 0;
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+        gap            : 10px;
+        text-decoration: none;
+        color          : rgb(168, 168, 168);
+
+        label {
+            text-decoration: none;
+            font-size      : 12px;
+            text-transform : uppercase;
+            pointer-events : none;
+        }
+
+        svg {
+            width : 15px;
+            height: 15px;
+        }
+
+
+        &.active {
+            font-weight: bold;
+            border-top : 2px solid #fff;
+            color      : white;
+        }
+    }
+}

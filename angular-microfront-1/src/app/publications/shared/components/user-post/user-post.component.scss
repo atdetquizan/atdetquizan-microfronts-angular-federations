@@ -1,0 +1,92 @@
+.user-post {
+    &-header {
+        margin-top      : 14px;
+        display         : flex;
+        justify-content : space-between;
+        gap             : 15px;
+        background-color: transparent;
+        padding         : 15px 0px;
+
+
+        &__image {
+            border-radius: 100%;
+            overflow     : hidden;
+            line-height  : 0;
+
+            img {
+                width : 52px;
+                height: 52px;
+            }
+        }
+
+        &__info {
+            flex           : 1;
+            display        : flex;
+            justify-content: space-between;
+            align-items    : center;
+
+            h4 {
+                small {
+                    font-weight: 400;
+                    font-size  : 12px;
+                }
+            }
+
+            button {
+                background-color: transparent;
+                border          : unset;
+                cursor          : pointer;
+
+                svg {
+                    pointer-events: none;
+                    fill          : white;
+                    height        : 20px;
+                    width         : 20px;
+                }
+            }
+        }
+
+    }
+
+    &-image {
+        overflow: hidden;
+        width   : 600px;
+        height: 620px;
+
+        img {
+            height      : 100%;
+            aspect-ratio: 1 / 1;
+            object-fit  : cover;
+        }
+
+    }
+
+    &-footer {
+        display        : flex;
+        justify-content: space-between;
+        align-items    : center;
+        padding-top    : 15px;
+        padding-bottom : 15px;
+
+        &__actions {
+            &-left {
+                display: flex;
+                gap    : 15px;
+            }
+
+            &-left,
+            &-right {
+                button {
+                    background-color: transparent;
+                    border          : unset;
+                    color           : white;
+                    cursor          : pointer;
+
+                    &:active {
+                        opacity: .6;
+                    }
+                }
+            }
+        }
+    }
+}

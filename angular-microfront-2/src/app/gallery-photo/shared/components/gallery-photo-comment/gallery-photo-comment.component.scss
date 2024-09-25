@@ -1,0 +1,94 @@
+.gallery-photo-comment {
+    display: flex;
+    gap    : 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    &__image {
+        border-radius: 100%;
+        overflow     : hidden;
+        line-height  : 0;
+        width        : 42px;
+        height       : 42px;
+        flex         : none;
+
+        img {
+            width : 42px;
+            height: 42px;
+        }
+    }
+
+    &-description {
+        display       : flex;
+        flex-direction: column;
+        gap           : 5px;
+
+        &__text {
+            font-size     : 14px;
+            display       : flex;
+            flex-direction: column;
+            gap           : 5px;
+
+            h3 {
+                display    : flex;
+                align-items: center;
+                gap        : 10px;
+
+                a {
+                    text-decoration: none;
+                    color          : white;
+                    font-weight    : 600;
+
+                    &:active {
+                        opacity: .7;
+                    }
+                }
+
+                small {
+                    color      : rgb(170, 170, 170);
+                    font-weight: 400;
+                }
+            }
+
+            p {
+                line-height: 1.4;
+            }
+        }
+
+        &__actions {
+            padding-top: 5px;
+            display    : flex;
+            align-items: center;
+            gap        : 10px;
+
+            button {
+                background-color: transparent;
+                border          : unset;
+                color           : white;
+                color           : rgb(170, 170, 170);
+                font-weight     : 600;
+                cursor: pointer;
+
+                &:active {
+                    opacity: .7;
+                }
+            }
+        }
+    }
+
+    &__actions {
+        button {
+            background-color: transparent;
+            border          : unset;
+            cursor: pointer;
+
+            svg {
+                color: white;
+            }
+
+            &:active {
+                opacity: .7;
+            }
+        }
+    }
+}

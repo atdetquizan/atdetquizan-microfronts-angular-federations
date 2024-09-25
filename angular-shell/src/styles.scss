@@ -1,0 +1,72 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family     : Arial, sans-serif;
+    background-color: #000;
+    color           : #fff;
+}
+
+@keyframes enter-slide-down {
+    from {
+        transform: translate(-50%, -60%);
+    }
+
+    to {
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes enter-scaling {
+    from {
+        transform: scale(0.3) translate(-50%, -50%);
+    }
+
+    to {
+        transform: scale(1) translate(-50%, -50%);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes overlay-leave {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity : 0;
+        z-index : 0;
+        position: static;
+    }
+}
+
+
+
+.image-circle {
+    border-radius: 100%;
+    overflow: hidden;
+    line-height: 0;
+}

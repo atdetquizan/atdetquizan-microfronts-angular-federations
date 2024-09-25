@@ -1,0 +1,9 @@
+.page {
+    &-wrapper {
+        display: flex;
+    }
+
+    &-container {
+        flex: 1;
+    }
+}

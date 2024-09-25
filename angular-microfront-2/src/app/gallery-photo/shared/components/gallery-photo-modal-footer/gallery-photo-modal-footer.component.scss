@@ -1,0 +1,45 @@
+.gallery-photo-modal-footer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 16px;
+    line-height: 0;
+    border-top: 1px solid rgb(38, 38, 38);
+
+    &__icons {
+        padding: 8px 16px;
+        svg {
+            color: white;
+        }
+    }
+
+    textarea {
+        background-color: transparent;
+        border: unset;
+        color: white;
+        resize: none;
+        height: 18px;
+        flex: 1;
+
+        &:focus-visible {
+            box-shadow: none;
+            outline: none;
+        }
+
+        &::placeholder {
+            color: rgb(168, 168, 168)
+        }
+    }
+
+    button {
+        color: rgb(179, 219, 255);
+        background-color: transparent;
+        border: none;
+        font-weight: 600;
+        &:disabled {
+            opacity: .6;
+        }
+    }
+}

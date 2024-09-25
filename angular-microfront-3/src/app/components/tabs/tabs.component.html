@@ -1,0 +1,10 @@
+<nav class="tabs">
+    <a
+      [ngClass]="{active: i == tabActive}"
+      (click)="onClickTab(tab, i)"
+      *ngFor="let tab of tabs; let i = index"
+    >
+      <div [innerHTML]="tab.icon | safeHtml"></div>
+      <label>{{tab.title}}</label>
+    </a>
+</nav>
