@@ -39,7 +39,7 @@
 
                 svg {
                     pointer-events: none;
-                    fill          : white;
+                    fill          : #000;
                     height        : 20px;
                     width         : 20px;
                 }
@@ -79,7 +79,7 @@
                 button {
                     background-color: transparent;
                     border          : unset;
-                    color           : white;
+                    color           : #000;
                     cursor          : pointer;
 
                     &:active {
